@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastraJulian-LPPA-Parcial1", "LastraJulian-LPPA-Parcial1\LastraJulian-LPPA-Parcial1.csproj", "{FABC245B-A124-4EC9-904C-EAA5B57E6096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FABC245B-A124-4EC9-904C-EAA5B57E6096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABC245B-A124-4EC9-904C-EAA5B57E6096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABC245B-A124-4EC9-904C-EAA5B57E6096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABC245B-A124-4EC9-904C-EAA5B57E6096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B729E37F-EFED-4A37-828E-A42461D8C8C6}
+	EndGlobalSection
+EndGlobal
