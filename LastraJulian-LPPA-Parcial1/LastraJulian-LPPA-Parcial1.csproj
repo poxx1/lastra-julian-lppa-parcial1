@@ -105,6 +105,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105312316100_mgAfiliados.cs" />
+    <Compile Include="Migrations\202105312316100_mgAfiliados.designer.cs">
+      <DependentUpon>202105312316100_mgAfiliados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Afiliados.cs" />
     <Compile Include="Models\IndentityBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,6 +131,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202105312316100_mgAfiliados.resx">
+      <DependentUpon>202105312316100_mgAfiliados.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

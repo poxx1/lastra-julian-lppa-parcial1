@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<LastraJulian_LPPA_Parcial1.Models.Afiliados>
+
 @{
     ViewBag.Title = "Afiliados";
 }
@@ -19,6 +20,50 @@
 <body>
 
     <h2> Afiliados de SwissMedicos</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CUIT)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+         {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Email)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.CUIT)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+                    @Html.ActionLink("Eliminar", "Eliminar", new { id = item.Id })
+                </td>
+            </tr>
+         }
+
+    </table>
 
     <div class="container body-content">
         <footer>
